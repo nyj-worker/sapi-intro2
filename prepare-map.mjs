@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+const feature=JSON.parse(fs.readFileSync('dist/namyangju-boundary.geojson','utf8'));
+const polygons=feature.geometry.type==='MultiPolygon'?feature.geometry.coordinates:[feature.geometry.coordinates];
+const coordinates=polygons.flat(2);
+const minX=Math.min(...coordinates.map(p=>p[0])),maxX=Math.max(...coordinates.map(p=>p[0]));
+const minY=Math.min(...coordinates.map(p=>p[1])),maxY=Math.max(...coordinates.map(p=>p[1]));
+const cx=(minX+maxX)/2,cy=(minY+maxY)/2,cos=Math.cos(cy*Math.PI/180),scale=9.5/(maxY-minY);
+const normalized=polygons.map(polygon=>polygon.map(ring=>ring.map(([lon,lat])=>[Number(((lon-cx)*cos*scale).toFixed(4)),Number(((lat-cy)*scale).toFixed(4))])));
+fs.writeFileSync('dist/namyangju-map.js',`// Simplified WGS84 municipal boundary; source details: map-sources.md\nexport const polygons=${JSON.stringify(normalized)};\n`);
+const paths=normalized.map(poly=>poly.map(ring=>ring.map(([x,y],i)=>`${i?'L':'M'}${(400+x*66).toFixed(1)} ${(380-y*66).toFixed(1)}`).join(' ')+'Z').join(' '));
+fs.writeFileSync('dist/namyangju-map.svg',`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><g fill-rule="evenodd" stroke-linejoin="round">${[48,24,0].map((offset,i)=>`<g transform="translate(0 ${offset})"><path d="${paths.join(' ')}" fill="${['#c6d0bf','#d9e2d0','#e9eddf'][i]}" stroke="${['#a7b59d','#a3b398','#9eaf91'][i]}" stroke-width="2"/></g>`).join('')}</g></svg>`);
+console.log(JSON.stringify({polygons:normalized.length,vertices:coordinates.length,bounds:[minX,minY,maxX,maxY]}));
