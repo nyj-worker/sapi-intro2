@@ -7,14 +7,14 @@ const projects = [
 ['금연캠페인','건강한 일상을 위한 남양주보건소의 금연캠페인 안내 사이트입니다.','시민 서비스','https://nyj-nosmoke.vercel.app/','보건소 · 건강증진과','health'],
 ['1페이지 보고서 작성 비법','신규 공직자를 위한 간결하고 명확한 보고서 작성 학습 자료입니다.','학습·공유','https://nyj-1page.vercel.app/','신규자 업무 학습','book'],
 ['업무활용 단축키','반복 작업을 가볍게 만드는 업무용 단축키를 배우는 학습 사이트입니다.','학습·공유','https://nyj-shortcut.vercel.app/','신규자 업무 학습','keyboard'],
-['AI 활용 프롬프트','업무에 AI를 활용하기 위한 프롬프트 학습 사이트입니다.','학습·공유','https://nyj-shortcut.vercel.app/','신규자 업무 학습 · 원문 주소 동일','ai'],
+['AI 활용 프롬프트','업무에 AI를 활용하기 위한 프롬프트 학습 사이트입니다.','학습·공유','https://nyj-prompt.vercel.app/','신규자 업무 학습','ai'],
 ['인포그래픽 & 대시보드 만들기','공공 인포그래픽과 대시보드를 5분 만에 만드는 방법을 소개합니다.','학습·공유','https://nyj-sapi.vercel.app/','데이터 시각화','dashboard'],
 ['시민주권위원회 시정백서','민선9기 남양주시 시민주권위원회의 시정백서 사이트입니다.','시민 서비스','https://civil-one-flame.vercel.app/','민선9기 · 시민주권위원회','book'],
 ['시민주권위원회 시민보고회','민선9기 남양주시 시민주권위원회 시민보고회 영상 제작 성과입니다.','영상·홍보','https://www.youtube.com/live/Zxz1c1drLGU?si=alo_F6krP5Ytv4ts&t=2152','민선9기 · 보고회 영상','video'],
 ['2026년 조직개편 입법예고','남양주시 조직개편 관련 자치법규 입법예고를 안내합니다.','업무 혁신','https://reorg-nu.vercel.app/','자치법규 · 입법예고','factory'],
 ['여성기업 공공구매 상담회','2026년 여성기업 공공구매 상담회 참여기업을 소개합니다.','시민 서비스','https://2026-wcom.netlify.app/','기업 지원','map'],
-['시무식 · 다산 정약용 위대한 도약','AI를 활용해 제작한 2026년 남양주시 시무식 영상입니다.','영상·홍보','','2026 시무식 · AI 영상','video'],
-['신년인사회 · 다산이 전하는 새해 인사','AI를 활용해 제작한 2026년 신년인사회 홍보 영상입니다.','영상·홍보','','2026 신년인사회 · AI 영상','video'],
+['시무식 · 다산 정약용 위대한 도약','AI를 활용해 제작한 2026년 남양주시 시무식 영상 스틸컷입니다.','영상·홍보','','2026 시무식 · AI 영상','video'],
+['신년인사회 · 다산이 전하는 새해 인사','AI를 활용해 제작한 2026년 신년인사회 홍보 영상 스틸컷입니다.','영상·홍보','','2026 신년인사회 · AI 영상','video'],
 ['교통국 정책 홍보 웹툰 · 시정 소식지','AI를 활용해 시정 소식지에 담는 교통국 정책 홍보 웹툰을 제작했습니다.','영상·홍보','','자동차관리과 · 화물팀','book'],
 ['기본사회 정책교육 요약 자료','2026.09.14 기본사회위원회 강남훈 부위원장 강의 내용을 정리한 정책교육 요약 자료입니다.','학습·공유','https://basic-society.vercel.app/','2026.09.14 · 기본사회위원회 강남훈 부위원장 강의','book'],
 ['화물 인허가 스마트 AI 상담관','화물 인허가 업무에 관한 궁금증을 상담할 수 있는 AI 서비스입니다.','시민 서비스','https://cargo-chatbot.vercel.app/','자동차관리과 · 화물팀','ai'],
@@ -24,7 +24,7 @@ const projects = [
 ['교통국 정책 홍보 웹툰','교통국의 정책을 보다 친근한 웹툰 형식으로 알리는 홍보 성과물입니다.','영상·홍보','','교통국','book'],
 ['화물팀 민원서비스 안내','화물팀 민원서비스와 이용 방법을 안내하는 온라인 가이드입니다.','시민 서비스','https://handbook1.vercel.app/','자동차관리과 · 화물팀','book']
 ];
-const members=[['김상수','부시장','지방이사관','고문'],['송성희','건축관리과','시설사무관','회원'],['유종형','자동차관리과','행정주사','학습리더','화물팀'],['이기정','교통정책과','방송통신주사','회원','교통시설1팀'],['권태준','지역경제과','시설주사','회원','기업SOS팀'],['김동겸','토지정보과','시설주사','부리더','토지민원1팀'],['김세화','남양주보건소 건강증진과','간호주사','회원','건강증진팀'],['정호진','문화예술과','행정주사보','회원','문화정책팀'],['한지수','지역경제과','행정서기','회원','소비자경제팀'],['최유관','주차관리과','행정서기보','회원','주차관리팀'],['신우철','자동차관리과','공업서기보','회원','화물팀']];
+const members=[['김상수','부시장','지방이사관','고문'],['송성희','건축관리과','시설사무관','회원'],['유종형','자동차관리과','행정주사','학습리더','화물팀'],['이기정','교통정책과','방송통신주사','회원','교통시설1팀'],['권태준','지역경제과','시설주사','부리더','기업SOS팀'],['김동겸','토지정보과','시설주사','부리더','토지민원1팀'],['김세화','남양주보건소 건강증진과','간호주사','회원','건강증진팀'],['정호진','문화예술과','행정주사보','회원','문화정책팀'],['한지수','지역경제과','행정서기','회원','소비자경제팀'],['최유관','주차관리과','행정서기보','회원','주차관리팀'],['신우철','자동차관리과','공업서기보','회원','화물팀']];
 const drawings={kiosk:'<rect x="74" y="18" width="82" height="107" rx="9"/><rect x="83" y="28" width="64" height="72" rx="4"/><path d="M98 125v18h35v-18M91 144h49"/><rect x="91" y="40" width="48" height="12" rx="2"/><path d="M93 65h15m12 0h17M93 78h15m12 0h17"/>',dashboard:'<rect x="36" y="29" width="157" height="105" rx="7"/><path d="M36 49h157M88 49v85M48 62h26M48 74h21M48 86h25M48 98h18M104 116V93h17v23m12 0V76h17v40m13 0V65h17v51"/><circle cx="47" cy="39" r="2"/>',map:'<path d="m34 47 49-15 62 17 51-18v95l-51 19-62-18-49 16zM83 32v95m62-78v96M38 107l44-25 28 9 37-29 45 20"/><path d="M141 68c0 17-22 34-22 34s-22-17-22-34a22 22 0 1 1 44 0Z"/><circle cx="119" cy="67" r="7"/>',book:'<path d="M49 30h59l14 9 14-9h50v108h-50l-14 8-14-8H49zM122 39v107M64 51h31M64 64h37M64 77h32M64 90h36M141 53h29M141 67h29M141 81h22"/>',factory:'<path d="M33 136V76l42-25v25l42-25v25l43-25v85zM160 136V27h22v109M47 95h14v17H47zm41 0h14v17H88zm41 0h14v17h-14zM33 136h162"/>',health:'<path d="M116 138s-76-43-76-83c0-35 51-44 76-9 25-35 76-26 76 9 0 40-76 83-76 83Z"/><path d="M61 83h29l14-27 17 52 16-25h35"/>',keyboard:'<rect x="25" y="45" width="181" height="90" rx="9"/><path d="M41 61h17v13H41zm29 0h17v13H70zm29 0h17v13H99zm29 0h17v13h-17zm29 0h30v13h-30zM41 87h26v13H41zm37 0h17v13H78zm29 0h17v13h-17zm29 0h17v13h-17zm29 0h22v13h-22zM72 112h89v10H72z"/>',ai:'<rect x="68" y="35" width="96" height="96" rx="16"/><rect x="84" y="51" width="64" height="64" rx="9"/><path d="M94 20v15m22-15v15m22-15v15M94 131v15m22-15v15m22-15v15M53 61h15m-15 22h15m-15 22h15m96-44h15m-15 22h15m-15 22h15"/><path d="m99 98 17-30 17 30m-27-10h20"/>',video:'<rect x="38" y="31" width="158" height="108" rx="8"/><path d="m102 59 40 25-40 25zM38 119h158M52 129h61"/>'};
 const grid=document.querySelector('#project-grid');
 projects.forEach((p,i)=>{const el=document.createElement('article');el.className='project-card '+(i===0?'featured':'');el.dataset.category=p[2];el.dataset.search=p.join(' ').toLowerCase();el.innerHTML=`<div class="card-art art-${p[5]}"><span class="project-no">P / ${String(i+1).padStart(2,'0')}</span><svg viewBox="0 0 230 165" aria-hidden="true">${drawings[p[5]]}</svg><span class="art-corner">+</span>${i===0?'<span class="featured-label">FEATURED PROJECT</span>':''}</div><div class="card-body"><span class="category">${p[2]}</span><h3>${p[0]}</h3><p>${p[1]}</p><div class="card-bottom"><span>${p[4]}</span>${p[3]?`<a href="${p[3]}" target="_blank" rel="noopener noreferrer" aria-label="${p[0]} 사이트 열기 (새 탭)">사이트 보기 <b>↗</b></a>`:'<span class="pending">링크 준비 중</span>'}</div>${p[3]?`<span class="print-url">${p[3]}</span>`:''}</div>`;grid.append(el)});
@@ -92,6 +92,9 @@ addAboutCards(adminProjects,['기본사회 정책교육 요약 자료','화물�
 // Move the legislative notice card into the productivity grid.
 efficiencyProjects.append(adminProjects.lastElementChild);
 addAboutCards(efficiencyProjects,['유가보조금 2회추경 설명 자료']);
+// Sort the complete catalog after building the curated introduction grids.
+const projectNameOrder=new Intl.Collator('ko',{numeric:true,sensitivity:'base'});
+grid.append(...[...grid.children].sort((a,b)=>projectNameOrder.compare(a.querySelector('h3').textContent,b.querySelector('h3').textContent)));
 document.querySelectorAll('.project-card').forEach(card=>{
   card.title='카드를 클릭시 아이디어를 확인하실 수 있습니다.';
 });
