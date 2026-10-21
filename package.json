@@ -1,7 +1,10 @@
 {
   "private": true,
   "type": "module",
-  "scripts": { "build": "esbuild dist/hero-3d.js --bundle --format=iife --minify --outfile=dist/hero-3d.bundle.js" },
+  "scripts": {
+    "build": "echo 'Static build ready'",
+    "bundle": "esbuild hero-3d.js --bundle --format=iife --minify --outfile=hero-3d.bundle.js"
+  },
   "dependencies": {
     "three": "^0.182.0"
   },
